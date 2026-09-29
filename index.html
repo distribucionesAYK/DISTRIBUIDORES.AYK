@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="robots" content="index, follow">
+  <title>Distribuidores AYK | Fragancias de 30 ml</title>
+  <meta name="description" content="Fragancias de 30 ml inspiradas en perfumes de diseñador. Venta minorista y mayorista desde 12 unidades, con envíos a todo el país.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Distribuidores AYK | Fragancias de 30 ml">
+  <meta property="og:description" content="Elegí tus fragancias favoritas, combiná variedades y armá tu pedido minorista o mayorista.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>[hidden]{display:none!important}</style>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Distribuidores AYK, ir al inicio"><img src="assets/logo.webp" alt="" width="54" height="54"><span><b>Distribuidores AYK</b><small>Extractos de diseñador</small></span></a>
+    <button class="menu-btn" id="menuButton" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <nav id="mainNav" aria-label="Navegación principal"><a href="#catalogo">Catálogo</a><a href="#mayorista">Mayorista</a><a href="#envios">Envíos</a><a href="#preguntas">Preguntas</a></nav>
+    <button class="cart-btn" id="openCart" type="button" aria-haspopup="dialog">Carrito <span id="cartCount" aria-label="0 productos">0</span></button>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-copy"><span class="eyebrow">VENTA MINORISTA Y MAYORISTA</span><h1>Fragancias que <em>dejan huella.</em></h1><p>Fragancias de 30 ml inspiradas en perfumes de diseñador. Elegí tus favoritas, combiná variedades y armá tu pedido.</p>
+        <div class="hero-actions"><a class="btn primary" href="#catalogo">Ver catálogo</a><a class="btn ghost" href="https://wa.me/5491167463767?text=Hola%20AYK%2C%20quiero%20informaci%C3%B3n%20para%20revender" target="_blank" rel="noopener noreferrer">Quiero revender</a></div>
+        <div class="trust" aria-label="Beneficios"><span>✓ Compra desde 1 unidad</span><span>✓ Mayorista desde 12</span><span>✓ Envíos a todo el país</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="logo-halo"><img src="assets/logo.webp" alt="" width="420" height="420"></div></div>
+    </section>
+
+    <section class="benefits" aria-label="Precios y beneficios"><article><b>$20.000</b><span>precio por unidad</span></article><article><b>$15.000 c/u</b><span>llevando 12 unidades</span></article><article><b>30% del envío</b><span>cubierto por AYK desde 30 unidades</span></article></section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="section-head"><div><span class="eyebrow">CATÁLOGO</span><h2>Encontrá tu próxima fragancia</h2></div><p id="resultsText" aria-live="polite"></p></div>
+      <div class="filters">
+        <div class="search"><label class="sr-only" for="search">Buscar por nombre o inspiración</label><span aria-hidden="true">⌕</span><input id="search" type="search" autocomplete="off" placeholder="Buscar por nombre o inspiración…"></div>
+        <div class="chips" role="group" aria-label="Filtrar por categoría"><button class="chip active" type="button" data-cat="Todos" aria-pressed="true">Todos</button><button class="chip" type="button" data-cat="Masculina" aria-pressed="false">Hombre</button><button class="chip" type="button" data-cat="Femenina" aria-pressed="false">Mujer</button><button class="chip" type="button" data-cat="Unisex" aria-pressed="false">Unisex</button></div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><b>No encontramos fragancias</b><span>Probá con otro nombre o cambiá el filtro.</span></div>
+      <button class="btn load-more" id="loadMore" type="button" hidden>Ver más fragancias</button>
+    </section>
+
+    <section class="wholesale" id="mayorista">
+      <div><span class="eyebrow">EMPEZÁ A REVENDER</span><h2>Tu negocio puede empezar con 12.</h2><p>Combiná las fragancias como quieras. Al llegar a 12 unidades, el carrito aplica automáticamente el precio mayorista de $15.000 por unidad.</p><a class="btn primary" href="#catalogo">Armar mi pedido</a></div>
+      <div class="price-card"><span>PACK MAYORISTA</span><strong>12 × $15.000</strong><b>$180.000</b><small>Podés combinar fragancias del catálogo.</small></div>
+    </section>
+
+    <section class="shipping" id="envios">
+      <div class="section-head"><div><span class="eyebrow">ENTREGAS</span><h2>Recibí tu pedido donde estés</h2></div></div>
+      <div class="shipping-grid"><article><span class="shipping-icon" aria-hidden="true">01</span><b>Correo Argentino</b><span>Envíos a todo el país.</span></article><article><span class="shipping-icon" aria-hidden="true">02</span><b>Andreani</b><span>Opción de envío nacional.</span></article><article><span class="shipping-icon" aria-hidden="true">03</span><b>Vía Cargo</b><span>Despachos a sucursal o destino.</span></article><article><span class="shipping-icon" aria-hidden="true">30%</span><b>Beneficio AYK</b><span>Desde 30 unidades cubrimos el 30% del costo del envío.</span></article></div>
+    </section>
+
+    <section class="faq" id="preguntas">
+      <div class="section-head"><div><span class="eyebrow">INFORMACIÓN ÚTIL</span><h2>Antes de hacer tu pedido</h2></div></div>
+      <div class="faq-list"><details><summary>¿Puedo combinar distintas fragancias?</summary><p>Sí. Tanto en pedidos minoristas como mayoristas podés elegir las variedades que quieras.</p></details><details><summary>¿Cuándo se aplica el precio mayorista?</summary><p>Desde 12 unidades, el valor pasa automáticamente a $15.000 por unidad.</p></details><details><summary>¿Cómo se confirma el pedido?</summary><p>Al finalizar el carrito se genera un mensaje de WhatsApp. Allí confirmamos disponibilidad, medio de pago y entrega.</p></details><details><summary>¿Cómo se realizan los envíos?</summary><p>Trabajamos con Correo Argentino, Andreani y Vía Cargo. El costo y la modalidad se coordinan antes de cerrar la compra.</p></details></div>
+    </section>
+
+    <section class="final-cta"><span class="eyebrow">¿TENÉS ALGUNA DUDA?</span><h2>Te ayudamos a elegir.</h2><p>Escribinos y recibí atención personalizada antes de armar tu pedido.</p><a class="btn primary" href="https://wa.me/5491167463767?text=Hola%20AYK%2C%20necesito%20ayuda%20para%20elegir%20fragancias" target="_blank" rel="noopener noreferrer">Hablar por WhatsApp</a></section>
+  </main>
+
+  <footer><img src="assets/logo.webp" alt="" width="54" height="54" loading="lazy"><div><b>DISTRIBUIDORES AYK</b><a href="https://www.instagram.com/distribuidores.ayk/" target="_blank" rel="noopener noreferrer">@distribuidores.ayk</a></div><a href="https://wa.me/5491167463767" target="_blank" rel="noopener noreferrer">WhatsApp +54 9 11 6746-3767</a></footer>
+  <a class="wa-float" href="https://wa.me/5491167463767?text=Hola%20AYK%2C%20vi%20la%20web%20y%20quiero%20consultar" target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp"><span aria-hidden="true">WA</span></a>
+
+  <div class="overlay" id="overlay" aria-hidden="true"></div>
+  <aside class="cart" id="cart" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true" inert>
+    <div class="cart-head"><div><small>TU PEDIDO</small><h2 id="cartTitle">Carrito</h2></div><button id="closeCart" type="button" aria-label="Cerrar carrito">×</button></div>
+    <div class="cart-progress" id="cartProgress" aria-live="polite"></div><div class="cart-items" id="cartItems"></div>
+    <div class="cart-bottom"><div class="totals"><span>Total estimado</span><strong id="cartTotal">$0</strong></div><button class="btn primary full" id="checkout" type="button">Finalizar por WhatsApp</button><small>La disponibilidad, el pago y el envío se confirman por WhatsApp antes de cerrar la compra.</small></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <noscript><div class="noscript">Necesitás activar JavaScript para ver el catálogo y usar el carrito.</div></noscript>
+  <script src="app.js" defer></script>
+</body>
+</html>
